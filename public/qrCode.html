@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>入园二维码</title>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="qrcode.min.js"></script>
+    <style>
+        div {
+            /*width: 150px;*/
+            /*height: 150px;*/
+            overflow: hidden;
+            /*background-color: #cccccc;*/
+            /*margin: 0 auto;*/
+        }
+        img {
+            width: 90%;
+            margin: 100px auto 20px
+            /* display: none !important */
+        }
+        /* canvas {
+            display: block !important
+        } */
+    </style>
+</head>
+<body>
+    <div id="qrcode">
+
+    </div>
+    <img src="" alt="" style="display: none">     <!--解决在部分机型上二维码不显示的问题，为什么这样可以解决，我也不知道-->
+    <div style="text-align: center; font-size: 24px">凭二维码可直接扫码入园</div>
+    <script>
+        var code = window.location.href.split('=')[1];
+        var qrcode = new QRCode('qrcode', {
+            text: code + '',
+            width: 256,
+            height: 256,
+            colorDark : '#000000',
+            colorLight : '#ffffff',
+            correctLevel : QRCode.CorrectLevel.H
+        });
+    </script>
+</body>
+</html>

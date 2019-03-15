@@ -1,0 +1,316 @@
+@main-color: #4E81F0;
+@main-color-hover: #306BEA;
+
+.a-label {
+  color: @main-color;
+  &:hover {
+    color: @main-color
+  }
+}
+
+/*对话框样式修改*/
+
+.ivu-modal{
+  //&-header {
+  //  padding: 0 0 0 10px;
+  //  height: 40px;
+  //  line-height: 40px;
+  //  background:rgba(238,242,251,1);
+  //}
+  .ivu-modal-wrap &{
+    min-width: 500px;
+  }
+
+  &-mask {
+    z-index: 10000;
+  }
+  &-wrap {
+    z-index: 10000 !important;
+  }
+  &-header {
+    padding: 0 0 0 10px;
+    height: 40px;
+    line-height: 40px;
+    background:rgba(238,242,251,1);
+    p {
+      vertical-align: middle;
+      margin-left: 12px;
+      font-size: 16px;
+      color: #17233d;
+      font-weight: 700;
+    }
+    &-inner {
+      vertical-align: middle;
+      margin-left: 12px;
+      font-size: 16px;
+    }
+  }
+  &-close {
+    top: 4px;
+    right: 13px;
+    .ivu-icon-ios-close:hover {
+      color: @main-color;
+    }
+  }
+  &-body{
+    padding: 0;
+    &-div {
+      padding: 20px 22px;
+    }
+    &-bigdiv {
+      padding: 40px 44px;
+    }
+  }
+  &-footer {
+    margin: 0;
+    text-align: center;
+    .ivu-btn{
+      padding: 0 16px;
+      height: 30px;
+      //padding: 0;
+      border-radius: 0;
+      &-text{
+        border: 1px solid @main-color;
+        color: @main-color;
+      }
+      &-primary{
+        background: @main-color;
+      }
+    }
+  }
+  &-content{
+    border-radius: 2px;
+  }
+  &-confirm{
+    padding: 0 0 20px 0;
+    background: #fff;
+    &-head{
+      padding: 0 0 0 10px;
+      height: 40px;
+      line-height: 40px;
+      background:rgba(238,242,251,1);
+      &-icon {
+        display: none;
+      }
+    }
+    &-body{
+      min-height: 100px;
+      overflow: hidden;
+      padding: 20px 22px;
+      div{
+        word-wrap:break-word
+      }
+    }
+    &-footer{
+      margin: 0;
+      text-align: center;
+      .ivu-btn{
+        padding: 0 16px;
+        height: 30px;
+        border-radius: 0;
+        &-text{
+          border: 1px solid @main-color;
+          color: @main-color;
+        }
+        &-primary{
+          background: @main-color;
+        }
+      }
+      button+button {
+        margin-left: 20px;
+      }
+    }
+  }
+}
+
+/*下拉框，样式修改*/
+.ivu-select {
+  &-item {
+    &-selected {
+      color: @main-color;
+      &:hover {
+        color: @main-color
+      }
+    }
+  }
+  &-selection {
+    border-radius: 2px;
+    &:hover {
+      border-color: @main-color
+    }
+    &:focus {
+      border-color: @main-color
+    }
+  }
+  &-disabled {
+    .ivu-select-selection {
+      color: #191919;
+      background-color: #f9f9f9;
+      &:focus {
+        border: 1px solid #dcdee2
+      }
+    }
+  }
+}
+
+/*输入框样式修改*/
+.ivu-input {
+  border-radius: 2px;
+  &:hover {
+    border-color: @main-color
+  }
+  &:focus {
+    border-color: @main-color
+  }
+}
+
+/*按钮样式修改*/
+.ivu-btn {
+  border-radius: 2px;
+  &-default {
+    &:hover {
+      color: @main-color;
+      border-color: @main-color
+    }
+  }
+  &-primary {
+    border-color: @main-color;
+    &:hover {
+      background: @main-color-hover;
+    }
+  }
+}
+
+
+/*单选按钮样式修改*/
+.ivu-radio-checked .ivu-radio-inner {
+  border-color: @main-color
+}
+.ivu-radio-inner:after {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  left: 2px;
+  top: 2px;
+  border-radius: 6px;
+  display: table;
+  border-top: 0;
+  border-left: 0;
+  content: ' ';
+  background-color: @main-color;
+  opacity: 0;
+  transition: all .2s ease-in-out;
+  transform: scale(0);
+}
+.ivu-radio-wrapper {
+  font-size: 14px;
+}
+
+/*多选按钮样式修改*/
+.ivu-checkbox-checked .ivu-checkbox-inner {
+   border-color: @main-color;
+   background-color: #ffffff;
+   &:after {
+     content: '';
+     display: table;
+     width: 4px;
+     height: 8px;
+     position: absolute;
+     top: 1px;
+     left: 4px;
+     border: 2px solid @main-color;
+     border-top: 0;
+     border-left: 0;
+     transform: rotate(45deg) scale(1);
+     transition: all .2s ease-in-out;
+   }
+ }
+
+/*loading层样式*/
+.ivu-spin {
+  color: @main-color;
+}
+
+/*日期选择器样式修改*/
+.ivu-date-picker-cells {
+  &-cell {
+    &-selected {
+      em {
+        background: @main-color;
+      }
+    }
+    &-today {
+      em:after {
+        content: '';
+        display: block;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: @main-color;
+        position: absolute;
+        top: 1px;
+        right: 1px;
+      }
+    }
+  }
+  &-focused {
+    em {
+      box-shadow: 0 0 0 1px @main-color inset;
+    }
+  }
+}
+
+/*导航标签样式修改*/
+.ivu-menu-light.ivu-menu-vertical .ivu-menu-item-active:not(.ivu-menu-submenu) {
+  color: @main-color;
+  &:after {
+    content: '';
+    display: block;
+    width: 2px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: @main-color;
+  }
+}
+.ivu-menu-light.ivu-menu-horizontal .ivu-menu-item-active, .ivu-menu-light.ivu-menu-horizontal .ivu-menu-item:hover, .ivu-menu-light.ivu-menu-horizontal .ivu-menu-submenu-active, .ivu-menu-light.ivu-menu-horizontal .ivu-menu-submenu:hover {
+  color: @main-color;
+  border-bottom: 2px solid @main-color;
+}
+
+/*步骤条样式修改*/
+.ivu-steps-item.ivu-steps-status-process .ivu-steps-head-inner {
+  border-color: @main-color;
+  background-color: @main-color;
+}
+.ivu-steps-item.ivu-steps-status-finish .ivu-steps-head-inner>.ivu-steps-icon, .ivu-steps-item.ivu-steps-status-finish .ivu-steps-head-inner span {
+  color: @main-color;
+}
+.ivu-steps-item.ivu-steps-status-finish .ivu-steps-tail>i:after {
+  background: @main-color;
+  opacity: 1;
+  transition: all .2s ease-in-out;
+  width: 100%;
+}
+.ivu-steps-item.ivu-steps-status-finish .ivu-steps-head-inner {
+  background-color: #fff;
+  border-color: @main-color;
+}
+
+/*表单label样式修改*/
+.ivu-form .ivu-form-item-label{
+  font-size: 14px;
+}
+/*提示框*/
+.ivu-modal-confirm-body-icon{
+  float: left;
+  position: relative;
+  margin-right: 10px;
+}
+
+.ivu-modal-confirm-body div:nth-of-type(2){
+  float:left;
+  margin-top: 16px;
+  width: 400px;
+}

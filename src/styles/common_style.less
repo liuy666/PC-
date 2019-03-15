@@ -1,0 +1,1295 @@
+html,body,#Box{
+    width: 100%;
+    height: 100%;
+}
+
+.margin-left-10{
+    margin-left: 10px;
+}
+
+.margin-top{
+    &-78 {
+        margin-top: 78px;
+    }
+    &-50{
+        margin-top: 50px;
+    }
+    &-20{
+        margin-top: 20px;
+    }
+}
+
+.pointer-cursor,.z-csr{
+    cursor: pointer;
+}
+
+.z-csr1{
+    cursor: unset;
+}
+
+.mr-15{
+    margin-right: 15px;
+}
+
+.ivu-spin-fix{
+    z-index: 9999;
+}
+
+.position-rel{
+    position: relative;
+}
+/*页面title区域*/
+.op-button-area{
+    position: absolute;
+    top: 8px;
+    left: 140px;
+}
+
+/*提示文字样式*/
+.message-title{
+    &-gray{
+        color:#bbbec4;
+    }
+    &-red{
+        color:#F54112;
+        font-family: SimSun;
+        margin-left: 10px;
+    }
+}
+
+/*表格部分*/
+.ivu-table-row-highlight td{
+    background-color: #8bbef5!important
+}
+.ivu-table .row-disabled td,.ivu-table .row-disabled td a {
+    color : #999;
+}
+
+.table-alink {
+    margin : 0 5px;
+}
+
+/*查询表单部分*/
+
+/*查询按钮*/
+//.op-btns{
+//    padding: 6px 25px;
+//}
+//.op-btns.resetbtn{
+//    margin-left: 8px;
+//}
+
+.one-row{
+    line-height: 45px;
+}
+.date-choose-area {
+    display: inline-block;
+}
+
+.all-options-area {
+    width: 100%;
+    display: flow-root;
+}
+
+.one-option{
+    float: left;
+}
+@media screen and (max-width: 1200px) {
+    .one-option {
+        width: 100%;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .one-option {
+        width: 50%;
+    }
+}
+@media screen and (min-width: 1700px) {
+    .one-option {
+        width: 33.33%;
+    }
+}
+
+/*分页部分*/
+.page-num-area {
+    margin: 10px;
+    overflow: hidden;
+}
+
+
+
+/*新增修改删除查看页面*/
+.form-option{
+    &-input{
+        width: 250px;
+    }
+    &-select{
+        width: 250px;
+    }
+    &-textarea{
+        width: 80%;
+
+        textarea{
+            height: 100px;
+        }
+    }
+}
+
+/*初始化*/
+aside, header, nav, section, article, footer {
+    display: block;
+    position: relative;
+    margin: auto;
+}
+
+hr{
+    background: #ECECEC;
+    height: 1px;
+    border: none;
+    width: 100%;
+}
+
+html,body,button,ul,li,p,h1,h2,h3,h4,h5,h6{
+    margin:0;
+    padding:0;
+}
+
+button{
+    cursor: pointer;
+}
+
+
+
+ul {
+    list-style: none;
+}
+
+
+/*浮动*/
+.fl{
+    float:left;
+}
+
+.fr{
+    float:right;
+}
+
+.width-1440{
+    width: 1440px;
+    margin: auto;
+    background: #fff;
+}
+
+.width-1200{
+    width: 1200px;
+    margin: auto;
+    background: #fff;
+}
+
+/*头部*/
+.header{
+    &-top{
+        height: 30px;
+        line-height: 30px;
+        background: #F5F8FB;
+    }
+    &-search{
+        height: 86px;
+        line-height: 86px;
+    }
+}
+
+.entrance{
+    background-color: #F5F8FB;
+}
+
+.normal-width{
+    width: 62.5%;
+    min-width: 1200px;
+    margin: auto;
+}
+
+.phone-img{
+    display: inline-block;
+}
+
+.logo-img{
+    width: 262px;
+    height: 32px;
+    margin-top: 27px;
+    //background-image: url("../assets/logo.png");
+}
+
+.advantage {
+    &-nav {
+        text-align: center;
+        & > li {
+            float: right;
+            margin-left: 24px;
+            width: 64px;
+            height: 64px;
+            margin-top: 15px;
+        }
+    }
+
+    &-icon{
+        width: 28px;
+        height: 28px;
+        /*background-color: #4B7FF0;*/
+        margin: 4px 18px 10px;
+        &-1{
+            background-image: url("../assets/icon_24_28.png");
+        }
+        &-2{
+            background-image: url("../assets/icon_refound28.png");
+        }
+        &-3{
+            background-image: url("../assets/icon_park28.png");
+        }
+        &-4{
+            background-image: url("../assets/icon_ticket28.png");
+        }
+        &+p{
+            height: 16px;
+            line-height: 16px;
+        }
+    }
+}
+
+/*导航条*/
+nav{
+    //width: 1440px;
+    height: 48px;
+    margin: auto;
+}
+
+.nav-main{
+    width: 545px;
+}
+
+.nav-ul{
+    margin: auto;
+    width: 545px;
+    height: 47px;
+    border-bottom: none;
+    &:after{
+        background: #fff !important;
+    }
+    &>li,a{
+        float: left;
+        width: 60px;
+        //height: 48px;
+        line-height: 24px !important;
+        margin: 0 35px;
+        padding: 16px 0 0 !important;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        text-align: center;
+        font-size: 16px;
+        color: #191919;
+        &:hover,&.ivu-menu-item-active{
+            //color: #4B7FF0;
+            border-bottom: solid 4px #4B7FF0 !important;
+        }
+    }
+}
+
+
+
+/*尾部*/
+
+.info-nav-ul{
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.advantage-bottom{
+    height: 78px;
+    padding: 16px 0;
+    box-sizing: border-box;
+    background: #4B7FF0;
+    &-ul{
+        width: 1200px;
+        margin: auto;
+        >li{
+            float: left;
+            margin-right: 94px;
+            &:nth-child(2){
+                margin-right: 120px;
+            }
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+.md-logo{
+    width: 46px;
+    height: 46px;
+    /*background-color: #fff;*/
+    margin-right: 16px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    float: left;
+    color: #fff;
+    &+div{
+        float: left;
+        color: #fff;
+        >h3{
+            font-size: 20px;
+            height: 20px;
+            line-height: 1;
+        }
+        >p{
+            margin-top: 8px;
+            font-size: 14px;
+            height: 14px;
+            line-height: 1;
+        }
+    }
+    &-1{
+        background-image: url("../assets/icon_ticket_bottom.png");
+    }
+    &-2{
+        background-image: url("../assets/icon_park_bottom.png");
+    }
+    &-3{
+        background-image: url("../assets/icon_refound_bottom.png");
+    }
+    &-4{
+        background-image: url("../assets/icon_24_bottom.png");
+    }
+}
+
+.info-nav{
+    padding-bottom: 40px;
+    overflow: hidden;
+    background: #FFF;
+    &-ul>li{
+        float: left;
+        overflow: hidden;
+        white-space: nowrap;
+        width: 120px;
+        &:nth-child(1){
+            margin: 40px 240px 0px 0px;
+        }
+        &:nth-child(2){
+            margin: 40px 240px 0px 0px;
+        }
+        &:nth-child(3){
+            margin: 40px 240px 0px 0px;
+        }
+        &:last-child{
+            margin: 40px 0px 0px 0px;
+        }
+        >h3{
+            font-size: 16px;
+            color: #191919;
+        }
+        >ul{
+            margin-top: 24px;
+            li{
+                margin-bottom: 12px;
+                font-size: 12px;
+                color: #5E5E60;
+            }
+        }
+    }
+}
+
+.qr-code{
+    margin-top: 24px;
+    width: 84px;
+    height: 84px;
+    background-color: #222;
+    margin-bottom: 8px;
+}
+
+
+footer{
+    background-color: #222834;
+}
+
+.foot-copyright{
+    background: #222834;
+    width: 62.5%;
+    min-width: 1200px;
+    margin: auto;
+    height: 236px;
+    padding-top: 60px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    text-align: center;
+    >div>a{
+        display: block;
+        height: 12px;
+        font-size: 12px;
+        line-height: 1;
+        color: #AFB0B3;
+        &:first-of-type{
+            margin-bottom: 10px;
+        }
+    }
+}
+
+/*倒三角*/
+.triangle{
+    width: 0;
+    height: 0;
+    border-width: 8px;
+    border-style: solid;
+    border-color: #4B7FF0 transparent transparent transparent;
+    position: absolute;
+    top: 148px;
+    left: 50%;
+    margin-left: -8px;
+}
+
+.common-second{
+    font-family: 'SourceHanSans-Regular'!important;
+    .ivu-steps-item.ivu-steps-status-process .ivu-steps-head-inner span{
+        font-family: SourceHanSansCN-Bold;
+    }
+
+
+    .ticket-table{
+        width: 100% !important;
+
+        table{
+            width: 100% !important;
+        }
+        button{
+            font-family: SourceHanSansCN-Medium;
+        }
+    }
+    img{
+        display: block;
+        margin: auto;
+    }
+    /*修改Iview默认样式*/
+    .ivu-breadcrumb a{
+        font-size: 12px;
+        color: #5E5E60;
+        font-family: SourceHanSansCN-Normal;
+    }
+
+    .ivu-breadcrumb>span:last-child {
+        font-size: 12px;
+        color: #4B7FF0;
+        font-weight: 500;
+    }
+
+    .ivu-menu-horizontal.ivu-menu-light:after {
+        background: transparent;
+    }
+
+    .ivu-page-item{
+        width: 24px;
+        height: 24px;
+        line-height: 24px;
+        background: #FFF;
+        border: 1px solid #DBDBDE;
+        min-width: 0;
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        margin-right: 4px;
+    }
+
+    .ivu-page-item:hover,.ivu-page-item-active,.ivu-page-next:hover,.ivu-page-prev:hover{
+        background: #4B7FF0;
+        border: none;
+    }
+
+    .ivu-page-item a{
+        margin: 0;
+        color: #5E5E60;
+
+    }
+
+    .ivu-page-item:hover a,.ivu-page-item-active a,.ivu-page-next:hover a,.ivu-page-prev:hover a{
+        color: #FFF;
+    }
+
+    .ivu-page-prev{
+        margin-right: 12px;
+    }
+
+    .ivu-page-next{
+        margin-left: 8px;
+    }
+
+    .ivu-page-next,.ivu-page-prev{
+        width: 60px;
+        height: 24px;
+        line-height: 24px;
+        border: 1px solid #DBDBDE;
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+    }
+
+    .ivu-page-next a,.ivu-page-prev a{
+        font-size: 12px;
+        color: #5E5E60;
+    }
+
+    .ivu-steps .ivu-steps-head-inner{
+        width: 24px;
+        height: 24px;
+        border: 1px solid #DBDBDE;
+    }
+
+    .ivu-steps-item.ivu-steps-status-process .ivu-steps-head-inner{
+        border-color: #4B7FF0;
+        background-color: #4B7FF0;
+    }
+
+    .ivu-steps-horizontal .ivu-steps-content {
+        margin-top: 8px;
+        margin-left: -28px;
+        padding-left: 0px;
+        font-size: 14px;
+        height: 14px;
+        line-height: 1;
+        //color: #4B7FF0;
+    }
+
+    .ivu-steps-item.ivu-steps-status-process .ivu-steps-content,.ivu-steps-item.ivu-steps-status-finish .ivu-steps-content {
+        color: #4B7FF0;
+    }
+
+
+
+    .ivu-steps-item.ivu-steps-status-wait .ivu-steps-content {
+        color: #5E5E60;
+    }
+
+    .step-3 .ivu-steps-content{
+        margin-left: -2px;
+    }
+
+    .ivu-steps .ivu-steps-tail{
+        padding: 0 100px;
+        left: 65px;
+        top: 20px;
+        border-bottom: 1px dashed #DBDBDE;
+        width: 0;
+    }
+
+    .ivu-steps-status-finish .ivu-steps-tail{
+        border-bottom: 1px dashed #4B7FF0;
+    }
+
+    .ivu-steps-item.ivu-steps-status-wait .ivu-steps-head-inner{
+        background-color: #DBDBDE;
+    }
+
+    .ivu-steps-item.ivu-steps-status-wait .ivu-steps-head-inner span{
+        color: #FFF;
+    }
+
+    .scope-first-container {
+        .ivu-form .ivu-form-item-label {
+            font-size: 14px;
+            color: #5E5E60;
+        }
+        .ivu-checkbox-wrapper{
+            margin-right: 28px;
+        }
+
+        .ivu-checkbox-checked .ivu-checkbox-inner{
+            background-color: #FFF;
+            &:after{
+                border-color: #2d8cf0;
+            }
+        }
+        .ivu-checkbox-wrapper{
+            font-size: 14px;
+        }
+
+        .clear-default-left{
+            .ivu-form-item-content{
+                margin-left: 0 !important;
+            }
+        }
+
+    }
+
+    /*修改数字输入框默认样式*/
+
+    .numInput .ivu-input{
+        width: 40px;
+        height: 30px;
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        display: inline-block;
+    }
+
+    .numInput-item .ivu-btn-primary{
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        float: left;
+        font-size: 30px;
+        .ivu-icon{
+            margin: -18px 0 0 -14px;
+        }
+        //span{
+        //    display: inline-block;
+        //    //width: 0;
+        //    //height: 0;
+        //    //line-height: 30px;
+        //}
+        &+.numInput{
+            float: left;
+        }
+        //&.upBt {
+        //    float: left;
+        //    display: block;
+        //    span{
+        //        //display: block;
+        //    margin: -10px 0 0 -8px;
+        //    //margin-top: -19px;
+        //    //margin-left: -7px;
+        //    font-size: 28px;
+        //}
+        //}
+        //&.downBt {
+        //    float: left;
+        //    display: block;
+        //    span {
+        //        //display: block;
+        //        margin-top: -18px;
+        //        margin-left: -7px;
+        //        font-size: 41px;
+        //    }
+        //}
+    }
+    .ivu-radio-wrapper{
+        font-size: 14px;
+        color: #191919;
+        margin-right: 92px;
+    }
+
+    .ivu-radio{
+        position:absolute;
+        right: -61px;
+    }
+
+    /*修改日期图标*/
+    //.ivu-icon-ios-calendar-outline:before{
+    //    content: "\F15C";
+    //}
+
+    .zishu{
+        font-size: 12px;
+        color: #AFB0B3;
+        //position: absolute;
+        text-align: right;
+        //right: 0;
+        //bottom: 0;
+        span{
+            color: #4B7FF0;
+        }
+    }
+
+    .ivu-anchor-ink{
+        display: none;
+    }
+
+    .btn3{
+        margin: 0 !important;
+        width: 30px;
+        height: 30px;
+        padding: 0 !important;
+        background: #4B7FF0;
+    }
+
+    .btn4{
+        width: 96px !important;
+        height: 39px !important;
+    }
+
+    .btn3.bg1{
+        background: #DBDBDE !important;
+        border: none;
+    }
+
+    .inpt1{
+        width: 40px;
+        input{
+            width: 40px;
+            height: 30px;
+            text-align: center;
+            border-radius: 0;
+        }
+
+    }
+
+    /*轮播图中控制点的样式*/
+    .bamboo>.bamboo-dots{
+        left: 85%;
+        bottom: 63px;
+        >*{
+            margin: 2px 4px;
+            background: #fff;
+            opacity: 0.6;
+            &.focus{
+                background: #fff;
+                opacity: 1;
+            }
+        }
+    }
+
+    .bamboo>.bamboo-dots>*.focus {
+        background: #fff;
+    }
+}
+
+
+
+/*万能清浮动*/
+.clearAll:after{
+    content: ".";
+    display: block;
+    font-size: 0;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+
+/*订单*/
+.scope-second-container,.scope-third-container,.scope-fail-container{
+    color: #5E5E60;
+
+    p{
+        font-size: 14px;
+        color: #191919;
+        font-weight: 700;
+        //height: 14px;
+        line-height: 1;
+        margin-bottom: 24px;
+        span{
+            &:nth-child(1){
+                color: #5E5E60;
+                font-weight: 500;
+                margin-right: 16px;
+            }
+        }
+    }
+
+}
+.success-logo{
+    width: 48px;
+    height: 48px;
+    background: url("../assets/icon_success48.png") no-repeat;
+    position: absolute;
+    left: -72px;
+}
+
+.order-tt{
+    font-size: 36px;
+    color: #4B7FF0;
+    margin-bottom: 24px;
+}
+
+.will-cancel{
+    font-size: 18px !important;
+    color: #191919;
+    height: 18px;
+    line-height: 1;
+}
+
+.short-hr{
+    margin: 53px auto;
+    background: #ECECEC;
+    height: 1px;
+    border: none;
+    width: 646px;
+}
+
+.pay-button{
+    width: 240px;
+    height: 40px;
+    background: #4B7FF0;
+    border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+    font-size: 16px;
+}
+
+.money-symbol{
+    font-size: 20px;
+    color: #FF8314;
+}
+
+.money-data{
+    font-size: 32px;
+    color: #FF7F0D;
+}
+
+/*详情页面*/
+.breadcrumb{
+    height: 51px;
+    background: #F5F8FB;
+    line-height: 25px;
+}
+
+.detail-page{
+    padding: 64px 32px 156px;
+    background: #FFF;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    h2{
+        font-size: 24px;
+        color: #191919;
+        //margin-top: 64px;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    h3{
+        font-size: 16px;
+        color: #191919;
+        margin-top: 72px;
+        margin-bottom: 36px;
+        text-align: center;
+    }
+
+    .info-release{
+        height: 18px;
+        line-height: 18px;
+        margin-top: 8px;
+        font-size: 12px;
+
+        color: #AFB0B3;
+        .logo{
+            width: 18px;
+            height: 18px;
+            margin-right: 8px;
+        }
+
+        span{
+            &:nth-of-type(1){
+                margin-right: 40px;
+            }
+            &:nth-of-type(2){
+                margin-right: 48px;
+            }
+        }
+    }
+
+    section{
+        p{
+            //height: 20px;
+            font-size: 14px;
+            color: #5E5E60;
+            line-height: 20px;
+            margin-bottom: 24px;
+        }
+
+        img{
+            width: 100%;
+            height: 650px;
+            margin-bottom: 40px;
+        }
+    }
+
+    &-container{
+        background: #F5F8FB;
+        padding-bottom: 25px;
+    }
+}
+
+.ticket-detail-page, .choose-first-scope,.ticketChoose-table,.choose-second-scope,.ticket-table,.scope-first-container{
+    textarea.ivu-input{
+        padding: 15px;
+        font-size: 14px;
+    }
+    .ivu-table {
+        th {
+            //opacity: 0.26;
+            background: #EDF3FE;
+            font-size: 14px;
+            color: #080C17;
+        }
+
+        td{
+            border-bottom-color: #ECECEC;
+        }
+        td.demo-table-price-column{
+            color: #FF7F0D;
+        }
+
+        &-row{
+            height: 66px;
+            font-size: 14px;
+            color: #5E5E60;
+        }
+
+        .ivu-btn{
+            font-size: 14px;
+            padding: 4px 26px;
+            background: #4B7FF0;
+            border-radius: 2px;
+          -webkit-border-radius: 2px;
+          -moz-border-radius: 2px;
+            color: #FFF;
+        }
+    }
+
+    .first-right-container{
+        .ivu-btn{
+            font-size: 16px;
+        }
+    }
+
+    .ivu-menu-light.ivu-menu-horizontal .ivu-menu-item{
+        background: #FFFFFF;
+        border: 1px solid #4B7FF0;
+        font-size: 14px;
+        color: #080C17;
+        width: 120px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        &:nth-of-type(1),&:nth-of-type(2){
+            border-right: unset;
+        }
+    }
+
+    .ivu-menu-light.ivu-menu-horizontal .ivu-menu-item {
+        &:hover,&-selected {
+            background: #4B7FF0;
+            border: 1px solid #4B7FF0;
+            color: #FFF;
+        }
+    }
+
+    .ivu-menu-horizontal{
+        height: 40px;
+    }
+
+    .ivu-menu{
+        margin-left: -26px;
+    }
+
+}
+
+/*弹出框*/
+
+.modal-contacts{
+    font-family: SourceHanSansCN-Regular;
+    .ivu-modal-header{
+        height: 48px;
+        background: #EEF2FB;
+
+        text-align: center;
+        .ivu-modal-header-inner{
+            font-size: 16px;
+            color: #191919;
+            font-family: SourceHanSansCN-Medium;
+        }
+    }
+
+    .ivu-modal-content{
+        border-radius: 0;
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+    }
+
+    .ivu-modal-header{
+        border-bottom: unset;
+    }
+
+    .ticket-tips{
+        font-size: 12px;
+        color: #F54112;
+        text-align: center;
+        margin-top: 16px;
+    }
+
+    .ivu-modal-footer{
+        border-top: unset;
+        //padding-top: 36px;
+        padding-bottom: 64px;
+    }
+
+    .ivu-btn{
+        width: 100px;
+        height: 40px;
+        font-family: SourceHanSansCN-Medium;
+    }
+    .ivu-btn-text{
+        border: 1px solid #4B7FF0;
+        border-radius: 2px;
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+        margin-right: 40px;
+    }
+
+    .ivu-btn-primary{
+        background: #4B7FF0;
+        border-radius: 2px;
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+        margin-right: 125px;
+    }
+
+    .contacts-container{
+        width: 366px;
+        height: 350px;
+        border: 1px solid #ECECEC;
+        margin: auto;
+        padding: 24px;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        overflow-y: auto;
+    }
+
+    .en-index{
+        font-weight: 700;
+        color: #191919;
+    }
+
+    .ivu-checkbox+span{
+        margin-left: 10px;
+    }
+
+    .contacts-edit{
+        position: absolute;
+        right:50px;
+        cursor: pointer;
+        &:hover{
+            color: #6894F2;
+        }
+    }
+
+    .contacts-delete{
+        position: absolute;
+        right: 0;
+        cursor: pointer;
+        &:hover{
+            color: #F76038;
+        }
+    }
+
+    .contacts-ul{
+        padding: 16px 0 10px 0;
+        border-top: 1px dashed #ECECEC;
+        margin-top: 10px;
+        >li{
+            margin-bottom: 15px;
+        }
+    }
+}
+
+/*轮播*/
+.lunbo-container {
+    .bamboo {
+        .bamboo-next,.bamboo-prev{
+        display: none;
+        }
+    }
+}
+
+/*字体*/
+
+
+.SHCN-B{
+    font-family: SourceHanSansCN-Bold;
+}
+
+.SHCN-H{
+    font-family: SourceHanSansCN-Heavy;
+}
+
+.SHCN-L{
+    font-family: SourceHanSansCN-Light;
+}
+
+.SHCN-M{
+    font-family: SourceHanSansCN-Medium;
+}
+
+.SHCN-N{
+    font-family: SourceHanSansCN-Normal;
+}
+
+.travelNav-scope{
+    .ivu-menu-item{
+        a{
+            color: #000;
+        }
+        &:hover{
+            a{
+                color: #2d8cf0;
+            }
+        }
+    }
+    .ivu-menu-item-active, .ivu-menu-item-selected{
+        a{
+            color: #2d8cf0;
+        }
+
+    }
+}
+
+.chooseTicket-container{
+    .step-container {
+        padding-left: 200px !important;
+    }
+    .ivu-steps-horizontal .ivu-steps-content{
+        margin-left: -15px;
+
+    }
+    .step-4{
+       .ivu-steps-content{
+            margin-left: 0px;
+        }
+    }
+    .ivu-steps .ivu-steps-tail{
+        //width: 160px;
+        left: 69px;
+    }
+
+}
+
+.chooseTicketTotal-container{
+    .ivu-menu{
+        li{
+            height: 40px;
+            font-size: 14px;
+            line-height: 14px;
+            text-align: center;
+        }
+    }
+
+    .ivu-menu-light.ivu-menu-vertical .ivu-menu-item-active:not(.ivu-menu-submenu){
+        color: #191919;
+        background: #EEF2FB;
+        border-right: 4px solid #4B7FF0;
+    }
+}
+
+/*1.选择票类2.确认订单3.支付订单4.完成*/
+
+.ticketChoose-table{
+    .ivu-table{
+        .ivu-btn{
+            width: 16px;
+            height: 16px;
+            padding: 0;
+        }
+    }
+
+}
+
+.choose-time-column{
+    .ivu-table-cell{
+        div{
+            span:nth-child(2){
+                color: #FF7F0D;
+            }
+        }
+    }
+}
+
+/* 为了使得computed里面的函数可以运行但是又不能渲染在页面上*/
+.z-ht{
+    height: 0;
+    overflow: hidden;
+}
+
+.z-ovhid{
+    overflow:hidden;
+}
+
+.z-bdr1{
+    border:none;
+}
+
+.z-bxz{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.z-txtaln{
+    text-align: center;
+}
+
+.btn-up{
+    background: #F5F8FB url('../assets/ btn_up_default.png') no-repeat center center;
+    &:hover {
+        background: #4B7FF0 url('../assets/btn_down_hover&selected.png') no-repeat center center !important;
+        transform: rotateX(180deg);
+    }
+}
+.btn-down{
+    background: #F5F8FB url('../assets/ btn_up_default.png') no-repeat center center;
+    transform: rotateX(180deg);
+    margin-right: 0;
+    &:hover {
+        background: #4B7FF0 url('../assets/btn_down_hover&selected.png') no-repeat center center !important;
+        transform: rotateX(0deg);
+    }
+}
+
+//.btn-down{
+//    background: #F5F8FB url('../assets/btn_down_hover&selected.png') no-repeat center center;
+//    //transform: rotateX(180deg);
+//}
+
+/*轮播图*/
+.slides{
+    .slide{
+        img{
+            width: 100% !important;
+            height: 470px !important;
+        }
+    }
+}
+
+/*底部的国徽*/
+.guohui{
+    margin: 26px auto 0;
+    width: 30px;
+    height: 31px;
+    background: url('../assets/Group 6.png') no-repeat;
+}
+/*登录弹框*/
+.login-modal{
+    .ivu-modal-footer{
+        display: none;
+    }
+}
+
+/*散客下单页面label样式修改*/
+.position-form-item {
+    position: relative;
+    top: 10px;
+    >label,.ivu-form-item-label {
+        font-size: 14px;
+        color: #080C17;
+        position: relative;
+        top: 20px;
+    }
+    >.ivu-form-item-content {
+        margin: 14px 0 56px 96px
+    }
+}
+
+.ivu-select-item-selected{
+    color: #fff;
+}
